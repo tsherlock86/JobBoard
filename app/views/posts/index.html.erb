@@ -1,0 +1,7 @@
+<ul>
+<% @posts.each do |job|  %>
+   <li> <%= link_to job.title, job %></li>
+
+<% end %>
+</ul>
+<%= link_to "Create a New Post", new_post_path %>
